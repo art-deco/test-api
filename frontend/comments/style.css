@@ -1,0 +1,15 @@
+.LCommentBlock {
+  display:table;
+  hyphens:auto;
+  -webkit-hyphens:auto;
+  word-break:break-word;
+}
+.LCommentBlock > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.LCommentBlock img {
+  margin-right: .5rem;
+  border-radius: 1.75rem;
+  width: 3.5rem;
+}

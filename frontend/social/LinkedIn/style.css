@@ -1,0 +1,27 @@
+.LinkedInButton {
+  background: #0077B5;
+  display: inline-table;
+  border-radius: 3px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  text-decoration: none;
+  color: white !important;
+  cursor: pointer;
+}
+.LinkedInButton .LinkedInIn {
+  font-family: 'Myriad Pro', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  padding-left: 6px;
+  padding-right: 5px;
+  border-right: 1px solid #0369A0;
+  border-radius: 3px;
+  font-weight: 600;
+  background: #0077B5;
+  display: table-cell;
+  vertical-align: middle;
+}
+.LinkedInButton .LinkedInText {
+  padding-left: .5em;
+  padding-right: .5em;
+  font-size: smaller;
+  display: table-cell;
+  vertical-align: middle;
+}

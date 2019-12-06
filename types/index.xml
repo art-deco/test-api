@@ -1,0 +1,40 @@
+<types>
+  <import from="@elastic/elasticsearch" ns="elastic" name="Client"/>
+  <import from="mongodb" name="Db"/>
+  <import from="@idio/github" ns="_idio" name="GithubUser"/>
+  <import from="@typedefs/goa" ns="_goa" name="Middleware"/>
+
+  <type record name="LinkedInUser">
+    <prop string name="id">
+      The user ID.
+    </prop>
+    <prop string name="firstName">
+      The user's first name.
+    </prop>
+    <prop string name="lastName">
+      The user's last name.
+    </prop>
+    <prop string name="profilePicture">
+      The URL to the profile picture.
+    </prop>
+  </type>
+  <type record name="Auth">
+    <prop name="linkedin_user" type="LinkedInUser" opt>User Info.</prop>
+    <prop name="github_user" type="_idio.GithubUser" opt>
+      GitHub User.
+    </prop>
+    <prop string name="csrf" opt>The CSRF token.</prop>
+  </type>
+
+  <type name="WebsiteComment">
+    <prop string name="_id" opt>id.</prop>
+    <prop boolean name="isAuthor" opt>Whether the current session user wrote this comment.</prop>
+    <prop string name="country" opt>The country name.</prop>
+    <prop string name="name" opt>The display name.</prop>
+    <prop string name="photo" opt>The photo to show.</prop>
+    <prop string name="comment">The text of the comment.</prop>
+    <prop type="Date" name="date">When the comment was added.</prop>
+    <prop type="_idio.GithubUser" name="github_user">GitHub user, if logged in.</prop>
+    <prop type="LinkedInUser" name="linkedin_user">Linkedin user, if logged in.</prop>
+  </type>
+</types>

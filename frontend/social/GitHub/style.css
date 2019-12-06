@@ -1,0 +1,25 @@
+.GitHubButton {
+  background: #dfdfdf;
+  display: inline-table;
+  border-radius: 3px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  text-decoration: none;
+  color: black !important;
+  cursor: pointer;
+}
+.GitHubButton .GitHubLogo {
+  padding: 0px 6px 0px 5px;
+  border-right: 1px solid #bcbcbc;
+  border-radius: 3px;
+  font-weight: 600;
+  background: rgb(223, 223, 223);
+  display: table-cell;
+  vertical-align: middle;
+}
+.GitHubButton .GitHubText {
+  padding-left: .5em;
+  padding-right: .5em;
+  font-size: smaller;
+  display: table-cell;
+  vertical-align: middle;
+}
