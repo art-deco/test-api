@@ -1,6 +1,6 @@
-# myNewPackage
+# testApi
 
-This app is the back-end for the [{{ title }}]({{ frontend }}) website. It powers the comments system by recording them in ElasticSearch and has the front-end code for Preact components for the JavaScript comments widget. The frond-end is built using _Closure Compiler_ run on JSX transpiled with `@a-la/jsx` package.
+This app is the back-end for the [Art Deco](www.artd.eco) website. It powers the comments system by recording them in ElasticSearch and has the front-end code for Preact components for the JavaScript comments widget. The frond-end is built using _Closure Compiler_ run on JSX transpiled with `@a-la/jsx` package.
 
 ![logo](images/reflex.png)
 
@@ -80,7 +80,7 @@ export default class App extends Component {
 
 <table>
   <tr>
-    <td><img src="https://avatars3.githubusercontent.com/u/38815725?v=4&amp;s=100" alt="{{ org }}"></td>
-    <td>© <a href="{{ website }}">{{ trademark }}</a> 2019</td>
+    <td><img src="https://avatars3.githubusercontent.com/u/38815725?v=4&amp;s=100" alt="art-deco"></td>
+    <td>© <a href="https://www.artd.eco">Art Deco™</a> 2019</td>
   </tr>
 </table>

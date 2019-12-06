@@ -35,7 +35,7 @@ const counter = async (ctx) => {
                 ],
               },
             },
-            { match: { 'headers.referer':  '{{ name }}' } },
+            { match: { 'headers.referer':  'test-api' } },
           ],
           must_not: [
             { match: { 'headers.from':  'googlebot' } },

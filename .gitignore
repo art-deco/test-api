@@ -3,7 +3,3 @@ yarn-error.log
 .env
 .settings
 
-# start template
-!.env
-!.settings
-# end template

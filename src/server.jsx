@@ -28,9 +28,9 @@ function getBoundary(req) {
 
 const {
   NODE_ENV,
-  HOST = 'https://{{ name }}',
-  API = 'https://api.{{ name }}',
-  FRONT_END = 'https://www.{{ name }}',
+  HOST = 'https://test-api',
+  API = 'https://api.test-api',
+  FRONT_END = 'https://www.test-api',
   CLOSURE, // for /comments page
   SESSION_KEY,
 } = process.env
@@ -54,7 +54,7 @@ export default async ({
     logarithm: {
       middlewareConstructor() {
         const l = logarithm({
-          app: '{{ name }}',
+          app: 'test-api',
           url: elastic,
         })
         return l
@@ -131,7 +131,7 @@ export default async ({
     prod: PROD,
     HOST: PROD ? HOST : url,
     CLOSURE: PROD || CLOSURE,
-    client, appName: '{{ name }}',
+    client, appName: 'test-api',
     render: (vnode, props = {}, Layout = DefaultLayout) => {
       return render(<Layout {...props}>
         {vnode}

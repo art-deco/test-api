@@ -5,7 +5,7 @@ import uniqid from 'uniqid'
 export default async function (ctx) {
   const { time, url, scroll, referrer } = ctx.request.body
   await ctx.client.create({
-    index: 'telemetry.mnp',
+    index: 'telemetry.test-api',
     id: uniqid(),
     type: 'unload',
     body: { time, scroll, date: new Date(), url,
